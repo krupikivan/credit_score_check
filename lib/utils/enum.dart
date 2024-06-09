@@ -3,3 +3,9 @@ enum ScoreReputation {
   good,
   poor,
 }
+
+enum AppState {
+  loading,
+  loaded,
+  error,
+}

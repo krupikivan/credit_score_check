@@ -65,4 +65,31 @@ class EmploymentInformationModel {
       isDirectDeposit: isDirectDeposit ?? this.isDirectDeposit,
     );
   }
+
+  factory EmploymentInformationModel.fromJson(Map<String, dynamic> json) =>
+      EmploymentInformationModel(
+        employmentType: json['employmentType'],
+        employer: json['employer'],
+        jobTitle: json['jobTitle'],
+        grossAnnualIncome: json['grossAnnualIncome'],
+        payFrequency: json['payFrequency'],
+        employerAddress: json['employerAddress'],
+        timeWithEmployerYears: json['timeWithEmployerYears'],
+        timeWithEmployerMonths: json['timeWithEmployerMonths'],
+        nextPayday: json['nextPayday'],
+        isDirectDeposit: json['isDirectDeposit'],
+      );
+
+  Map<String, dynamic> toJson() => {
+        'employmentType': employmentType,
+        'employer': employer,
+        'jobTitle': jobTitle,
+        'grossAnnualIncome': grossAnnualIncome,
+        'payFrequency': payFrequency,
+        'employerAddress': employerAddress,
+        'timeWithEmployerYears': timeWithEmployerYears,
+        'timeWithEmployerMonths': timeWithEmployerMonths,
+        'nextPayday': nextPayday,
+        'isDirectDeposit': isDirectDeposit,
+      };
 }

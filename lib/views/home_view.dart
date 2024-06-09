@@ -4,7 +4,6 @@ import '../widgets/animated_chart.dart';
 import '../widgets/credit_factors.dart';
 import '../widgets/account_details.dart';
 import '../widgets/total_balance.dart';
-import 'employment_information_view.dart';
 import '../widgets/open_credit_card_accounts.dart';
 import '../widgets/credit_score.dart';
 
@@ -36,10 +35,8 @@ class HomeView extends StatelessWidget {
                         IconButton(
                           icon: const Icon(Icons.settings, color: Colors.white),
                           onPressed: () {
-                            Navigator.of(context).push(MaterialPageRoute(
-                              builder: (context) =>
-                                  const EmploymentInformation(),
-                            ));
+                            Navigator.of(context)
+                                .pushNamed('/employment-information');
                           },
                         ),
                         const Text(

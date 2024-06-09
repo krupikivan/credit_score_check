@@ -1,6 +1,5 @@
 import 'package:credit_score_check/widgets/animated_circle.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../utils/enum.dart';
